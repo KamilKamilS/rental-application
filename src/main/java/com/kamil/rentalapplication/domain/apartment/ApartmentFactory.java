@@ -13,6 +13,6 @@ public class ApartmentFactory {
             rooms.add(new Room(name, new SquareMeter(size)))
         );
 
-        return new Apartment(ownerId, adress, description);
+        return new Apartment(ownerId, adress, description, rooms);
     }
 }
