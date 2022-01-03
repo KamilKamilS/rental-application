@@ -3,10 +3,10 @@ package com.kamil.rentalapplication.infrastructure.persistence.jpa.apartment;
 import com.kamil.rentalapplication.domain.apartment.Apartment;
 import com.kamil.rentalapplication.domain.apartment.ApartmentRepository;
 
-public class JpaApartmentRepository implements ApartmentRepository {
+class JpaApartmentRepository implements ApartmentRepository {
     private final SpringJpaApartmentRepository springJpaApartmentRepository;
 
-    public JpaApartmentRepository(SpringJpaApartmentRepository springJpaApartmentRepository) {
+    JpaApartmentRepository(SpringJpaApartmentRepository springJpaApartmentRepository) {
         this.springJpaApartmentRepository = springJpaApartmentRepository;
     }
 

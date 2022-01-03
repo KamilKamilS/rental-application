@@ -3,10 +3,10 @@ package com.kamil.rentalapplication.infrastructure.persistence.jpa.hotel;
 import com.kamil.rentalapplication.domain.hotel.Hotel;
 import com.kamil.rentalapplication.domain.hotel.HotelRepository;
 
-public class JpaHotelRepository implements HotelRepository {
+class JpaHotelRepository implements HotelRepository {
     private final SpringJpaHotelRepository springJpaHotelRepository;
 
-    public JpaHotelRepository(SpringJpaHotelRepository springJpaHotelRepository) {
+    JpaHotelRepository(SpringJpaHotelRepository springJpaHotelRepository) {
         this.springJpaHotelRepository = springJpaHotelRepository;
     }
 
