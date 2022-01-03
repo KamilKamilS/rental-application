@@ -3,9 +3,11 @@ package com.kamil.rentalapplication.infrastructure.rest.api.hotelroom;
 import com.kamil.rentalapplication.application.hotelroom.HotelRoomApplicationService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/hotelroom")
 public class HotelRoomRestController {
     private final HotelRoomApplicationService hotelRoomApplicationService;
 
