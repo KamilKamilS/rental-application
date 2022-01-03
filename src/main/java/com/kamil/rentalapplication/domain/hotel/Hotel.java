@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Hotel {
     @Id
     @GeneratedValue
-    private Long id;
+    private String id;
 
     private final String name;
 

@@ -4,10 +4,10 @@ import com.kamil.rentalapplication.domain.hotelroom.HotelRoomRepository;
 import com.kamil.rentalapplication.domain.hotelroom.HotelRoom;
 
 class JpaHotelRoomRepository implements HotelRoomRepository {
-    private final SpringJpaHotelRoomRepository springJpaHotelRoomRepository;
+    private final SpringJpaHotelRoomRepository hotelRoomRepository;
 
-    JpaHotelRoomRepository(SpringJpaHotelRoomRepository springJpaHotelRoomRepository) {
-        this.springJpaHotelRoomRepository = springJpaHotelRoomRepository;
+    JpaHotelRoomRepository(SpringJpaHotelRoomRepository hotelRoomRepository) {
+        this.hotelRoomRepository = hotelRoomRepository;
     }
 
     @Override
