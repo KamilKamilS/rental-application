@@ -1,5 +1,7 @@
 package com.kamil.rentalapplication.domain.apartment;
 
+import com.kamil.rentalapplication.domain.eventchannel.EventChannel;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -22,5 +24,10 @@ public class Apartment {
         this.adress = adress;
         this.description = description;
         this.rooms = rooms;
+    }
+
+    public void book(String tenantId, Period period, EventChannel eventChannel) {
+        ApartmentBooked apartmentBooked = ApartmentBooked.create(id, ownerId, tenantId, period);
+        eventChannel.publish(apartmentBooked);
     }
 }
